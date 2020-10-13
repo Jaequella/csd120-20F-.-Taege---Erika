@@ -9,9 +9,23 @@
     <meta name="description" content="Index page for the class CSD120. 2020." />
     <meta name="language" content="English" />
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="Images/avicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Images/avicon-16x16.png"
+    />
     <link rel="manifest" href="site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
@@ -31,59 +45,94 @@
       <main>
         <h1>Survey</h1>
         <form action="https://formspree.io/f/xleojbzp" method="post">
-           <p>
-               <label for="name">What is your name?<abbr title="required">*</abbr></label>
-               <input type="text" id="name" name="name_field">
-           </p>
-           <p>
-                <label for="email">What is your email?<abbr title="required">*</abbr></label>
-                <input type="email" id="email" name="email_field">
-           </p>
-           <p>
-                <label for="number">Which whole number is the best?<abbr title="required">*</abbr></label>
-                <input type="number" id="number" name="best_whole_number" min="0">
-           </p>
-           <p>
-                <label for="day">Which day is best?</label>
-                <input type="date" id="day" name="best_day">
-           </p>
-           <p>
-            <label for="bear">Which bear is the best?<abbr title="required">*</abbr></label>
+          <p>
+            <label for="name"
+              >What is your name?<abbr title="required">*</abbr></label
+            >
+            <input type="text" id="name" name="name_field" />
+          </p>
+          <p>
+            <label for="email"
+              >What is your email?<abbr title="required">*</abbr></label
+            >
+            <input type="email" id="email" name="email_field" />
+          </p>
+          <p>
+            <label for="number"
+              >Which whole number is the best?<abbr title="required"
+                >*</abbr
+              ></label
+            >
+            <input type="number" id="number" name="best_whole_number" min="0" />
+          </p>
+          <p>
+            <label for="day">Which day is best?</label>
+            <input type="date" id="day" name="best_day" />
+          </p>
+          <p>
+            <label for="bear"
+              >Which bear is the best?<abbr title="required">*</abbr></label
+            >
             <select type="bear" id="bear" name="best_bear" min="0">
-                <option value="%nbsp"> </option>
-                <option value="Black">Black</option>
-                <option value="Brown">Brown</option>
-                <option value="Care">Care</option>
-                <option value="Panda">Panda</option>
-                <option value="Polar">Polar</option>
-                <option value="Teddy">Teddy</option>
-                </select>
-            </p>
-        
-                <fieldset>
-                    <legend>Do you like radio buttons?</legend>
-                    <ul>
-                        <li>
-                            <label for="Yes">
-                            <input type="radio" id="yes" name="radio" value="yes">yes</label>
-                        </li>
-                        <li>
-                            <label for="No">
-                            <input type="radio" id="No" name="radio" value="No">No</label>
-                        </li>
-                        <li>
-                            <label for="classified">
-                            <input type="radio" id="classified" name="radio" value="?" checked>Classified</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <p>
-                    <label>What is the meaning of life?</label>
-                <textarea id="life" name="life_meaning" placeholder="Enter answer here" cols="50" rows="5"></textarea>
-                </p>
-           <p class ="button">
-               <button type="submit" value="send">Submit</button>
-           </p>
+              <option value="%nbsp"></option>
+              <option value="Black">Black</option>
+              <option value="Brown">Brown</option>
+              <option value="Care">Care</option>
+              <option value="Panda">Panda</option>
+              <option value="Polar">Polar</option>
+              <option value="Teddy">Teddy</option>
+            </select>
+          </p>
+
+          <fieldset>
+            <legend>Do you like radio buttons?</legend>
+            <ul>
+              <li>
+                <label for="Yes">
+                  <input
+                    type="radio"
+                    id="yes"
+                    name="radio"
+                    value="yes"
+                  />yes</label
+                >
+              </li>
+              <li>
+                <label for="No">
+                  <input
+                    type="radio"
+                    id="No"
+                    name="radio"
+                    value="No"
+                  />No</label
+                >
+              </li>
+              <li>
+                <label for="classified">
+                  <input
+                    type="radio"
+                    id="classified"
+                    name="radio"
+                    value="?"
+                    checked
+                  />Classified</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <p>
+            <label>What is the meaning of life?</label>
+            <textarea
+              id="life"
+              name="life_meaning"
+              placeholder="Enter answer here"
+              cols="50"
+              rows="5"
+            ></textarea>
+          </p>
+          <p class="button">
+            <button type="submit" value="send">Submit</button>
+          </p>
         </form>
       </main>
       <footer>
@@ -98,14 +147,21 @@
           &copy; 2020
           <a
             href="mailto:Soltaege@gmail.com?subject=Message%20from%20CSD120%20Website"
-            >Erika Taege</a>
+            >Erika Taege</a
+          >
         </p>
         <!--Mail function needs mail app, find later.-->
-      <picture>
-        <source type="image/svg+xml" srcset="Images/sc-logo.svg" media="(max width:70px)">
-        <img src= "Images/sc-logo.png"
-        srcset="Images/sc-logo@1.5x.png 1.5x, Images/sc-logo@2x.png 2x">
-      </picture>
+        <picture>
+          <source
+            type="image/svg+xml"
+            srcset="Images/sc-logo.svg"
+            media="(max width:70px)"
+          />
+          <img
+            src="Images/sc-logo.png"
+            srcset="Images/sc-logo@1.5x.png 1.5x, Images/sc-logo@2x.png 2x"
+          />
+        </picture>
       </footer>
       <a href="#top" title="Back to top">◤</a>
     </div>
