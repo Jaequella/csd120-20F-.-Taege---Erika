@@ -47,23 +47,23 @@
         <form action="https://formspree.io/f/xleojbzp" method="post">
           <p>
             <label for="name"
-              >What is your name?<abbr title="required">*</abbr></label
+              >What is your name?<abbr title="required" aria-label="required">*</abbr></label
             >
-            <input type="text" id="name" name="name_field" />
+            <input type="text" id="name" name="name_field" required />
           </p>
           <p>
             <label for="email"
-              >What is your email?<abbr title="required">*</abbr></label
+              >What is your email?<abbr title="required" aria-label="required">*</abbr></label
             >
-            <input type="email" id="email" name="email_field" />
+            <input type="email" id="email" name="email_field" required />
           </p>
           <p>
             <label for="number"
               >Which whole number is the best?<abbr title="required"
-                >*</abbr
+              aria-label="required">*</abbr
               ></label
             >
-            <input type="number" id="number" name="best_whole_number" min="0" />
+            <input type="number" id="number" name="best_whole_number" min="1" />
           </p>
           <p>
             <label for="day">Which day is best?</label>
@@ -71,10 +71,10 @@
           </p>
           <p>
             <label for="bear"
-              >Which bear is the best?<abbr title="required">*</abbr></label
+              >Which bear is the best?<abbr title="required" aria-label="required">*</abbr></label
             >
-            <select type="bear" id="bear" name="best_bear" min="0">
-              <option value="%nbsp"></option>
+            <select id="bear" name="best_bear" required>
+              <option value="">&nbsp;</option>
               <option value="Black">Black</option>
               <option value="Brown">Brown</option>
               <option value="Care">Care</option>
@@ -88,7 +88,7 @@
             <legend>Do you like radio buttons?</legend>
             <ul>
               <li>
-                <label for="Yes">
+                <label for="yes">
                   <input
                     type="radio"
                     id="yes"
@@ -103,7 +103,7 @@
                     type="radio"
                     id="No"
                     name="radio"
-                    value="No"
+                    value="no"
                   />No</label
                 >
               </li>
@@ -121,7 +121,7 @@
             </ul>
           </fieldset>
           <p>
-            <label>What is the meaning of life?</label>
+            <label for="life">What is the meaning of life?</label>
             <textarea
               id="life"
               name="life_meaning"
