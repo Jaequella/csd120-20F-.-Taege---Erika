@@ -1,0 +1,92 @@
+/*Colour theme is purple with blues and greens with a yellow or dark purple accent.*/
+html {
+    box-sizing: border-box;
+    background-color: #362f52;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    margin-top: 0;
+}
+h1,
+h2,
+h3 {
+    color: #47e7aa;
+}
+a {
+    color: #a2ebeb;
+}
+::selection {
+    background-color: #e1f185;
+    color: #b4f09c;
+}
+dt::after {
+    content: ":";
+    font-weight: bold;
+}
+header {
+    border-top: 4px solid rgba(67, 223, 132, 0.4);
+    margin: 0 -2em 0;
+}
+header nav {
+    border-bottom: 1px dotted rgb(67, 223, 132, 0.4);
+    margin: 0 2em 2em;
+}
+header li {
+    display: inline-block;
+    padding: 1em 1em 0.5em;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    border-top: 4px transparent rgb(67, 223, 132, 0.4);
+    padding: 1em 1em 0.5em;
+    color: #58c26f;
+}
+nav a:hover {
+    border-top: 4px solid #dce992;
+}
+
+th,
+td {
+    padding: 0.3em 1em;
+}
+thead tr,
+tbody tr,
+tfoot tr {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+tr {
+    background-color: rgb(0, 0, 0, 0.05);
+}
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+label {
+    display: block;
+}
+
+fieldset label {
+    display: inline;
+}
+
+button[type="submit"] {
+    border: none;
+    padding: 1em 3em;
+    color: #c9f187;
+    background-color: #83e083;
+}
+
+input:invalid {
+    background-color: #662828;
+}
+
+input:valid {
+    background-color: none;
+}
