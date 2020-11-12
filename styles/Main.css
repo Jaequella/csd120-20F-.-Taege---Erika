@@ -1,7 +1,8 @@
 /*Colour theme is purple with blues and greens with a yellow or dark purple accent.*/
 html {
   box-sizing: border-box;
-  background-color: #362f52;
+  background-color: #23212b;
+  color: #FFFFFF80;
 }
 *,
 *::before,
@@ -10,6 +11,13 @@ html {
 }
 body {
   margin-top: 0;
+}
+
+.width-wrap {
+  max-width: 960px;
+  margin: 0 auto 3em;
+  padding: 0 2em 2em;
+  background-color: #362f52;
 }
 h1,
 h2,
@@ -36,35 +44,48 @@ header nav {
   margin: 0 2em 2em;
 }
 header li {
-  display: inline-block;
-  padding: 1em 1em 0.5em;
+  display: inline;
 }
 nav ul {
   margin: 0;
   padding: 0;
 }
 nav a {
-  border-top: 4px transparent rgb(67, 223, 132, 0.4);
-  padding: 1em 1em 0.5em;
+  display: inline-block;
+  border-top: 4px solid rgb(67, 223, 132, 0);
+  padding: 1em 0 0.5em;
+  margin: -4px 1em 0;
   color: #58c26f;
 }
 nav a:hover {
   border-top: 4px solid #dce992;
 }
 
+hr {
+  width: 50vw;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  max-width: 890px;
+  min-width: 300px;
+  border: none;
+  border-bottom: 3px dotted rgba(0,0,0,0.5);
+}
+
 th,
 td {
   padding: 0.3em 1em;
 }
-thead tr,
-tbody tr,
-tfoot tr {
+thead tr th,
+thead tr td,
+tbody tr th,
+tfoot tr th,
+tfoot tr td {
   background-color: rgb(0, 0, 0, 0.2);
 }
-tr {
+tr td {
   background-color: rgb(0, 0, 0, 0.05);
 }
-tr:nth-child(even) {
+tr:nth-child(even) td {
   background-color: rgba(0, 0, 0, 0.15);
 }
 
@@ -76,7 +97,7 @@ fieldset label {
   display: inline;
 }
 
-button[type="submit"] {
+[type="submit"] {
   border: none;
   padding: 1em 3em;
   color: #c9f187;
