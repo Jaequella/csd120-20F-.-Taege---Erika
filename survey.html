@@ -34,31 +34,6 @@
     <link rel="manifest" href="site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <style>
-      div h1,h2,h3,h4,h5,h6 {
-        font-family: 'Space Mono', monospace;
-      }
-      p {
-        font-family: 'Asap', sans-serif;
-      }
-      a{
-        text-decoration: none;
-        text-emphasis: Bold;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-      }
-      a:hover{
-        text-decoration: underline;
-      }
-      ol{
-       text-transform: uppercase;
-       list-style-type: upper-roman;
-      }
-      ul{
-        padding: 0;
-        list-style-type: none;
-      }
-    </style>
   </head>
   <body>
     <div class="width-wrap">
@@ -103,8 +78,8 @@
             <label for="bear"
               >Which bear is the best?<abbr title="required">*</abbr></label
             >
-            <select type="bear" id="bear" name="best_bear" min="0">
-              <option value="%nbsp"></option>
+            <select id="bear" name="best_bear">
+              <option value="">&nbsp;</option>
               <option value="Black">Black</option>
               <option value="Brown">Brown</option>
               <option value="Care">Care</option>
@@ -118,7 +93,7 @@
             <legend>Do you like radio buttons?</legend>
             <ul>
               <li>
-                <label for="Yes">
+                <label for="yes">
                   <input
                     type="radio"
                     id="yes"
@@ -185,10 +160,11 @@
           <source
             type="image/svg+xml"
             srcset="Images/sc-logo.svg"
-            media="(max width:70px)"
           />
           <img
             src="Images/sc-logo.png"
+            width="70"
+            alt="Sault College Logo"
             srcset="Images/sc-logo@1.5x.png 1.5x, Images/sc-logo@2x.png 2x"
           />
         </picture>

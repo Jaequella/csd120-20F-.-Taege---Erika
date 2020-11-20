@@ -21,54 +21,8 @@
     <link href="styles/Main.css" rel="stylesheet">
     <link rel="manifest" href="site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />\
-    <style>
-      h1{ 
-        background: rgb(2,0,36);
-        background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,121,110,0.36458333333333337) 24%, rgba(23,111,163,1) 100%);
-      }
-      h1,h2,h3,h4,h5,h6 {
-        font-family: 'Space Mono', monospace;
-      }
-      p {
-        font-family: 'Asap', sans-serif;
-      }
-      body a{
-        text-decoration: none;
-      }
-      body a:hover{
-        text-decoration: underline;
-      }
-      ol{
-       text-transform: uppercase;
-       list-style-type: upper-roman;
-      }
-      iframe{
-        border-top-right-radius: .5cm;
-        border-bottom-left-radius: .5cm;
-      }
-      ul{
-        text-decoration: none;
-        text-emphasis: Bold;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-      }
-      .bio{
-        column-gap: 2em;
-        margin-top: 1em;
-        border-collapse: collapse;
-        caption-side: bottom;
-      }
-      footer{
-        font-size: 75%;
-        text-align: center;
-      }
-      .backtop{
-        text-shadow: 4px;
-        text-decoration: none !important
-      }
-
-    </style>
+    <meta name="theme-color" content="#ffffff" />
+  
   </head>
   <body>
     <div class="width-wrap">
@@ -85,12 +39,11 @@
       <main>
         <h1>Welcome to Erika Taege's CSD120 Website!</h1>
         <div class = "bio">
-        <a href ="Images/Windowbed.jpg">
-        <img src= "Images/Selfie-replacement300px.jpg" alt="One of My favourite pictures i've made"
-        sizes="(max-width:500px) 150px, 300px"
-        srcset="Images/Selfie-replacement150px.jpg 150w, Images/Selfie-replacement300px.jpg 300w">
-      </a>
-    </div>
+          <a href ="Images/Windowbed.jpg">
+          <img src= "Images/Selfie-replacement300px.jpg" alt="One of My favourite pictures i've made"
+          sizes="(max-width:500px) 150px, 300px"
+          srcset="Images/Selfie-replacement150px.jpg 150w, Images/Selfie-replacement300px.jpg 300w">
+        </a>
         <p> 
           I'm 19 years old, and enjoy drawing in my spare time if i'm not
           playing games. I main support in League of legends, and healer in
@@ -101,8 +54,7 @@
           I'm usually more reserved when speaking about topic i may not know
           about, but can be very vocal about topics i do know about.
         </p>
-      <div>
-        <table class = "bio">
+        <table>
           <caption>Table 1. Current Courses</caption>
           <tr><th rowspan= "2">Term</th><th colspan="3">Course</th></tr>
           <tr><th>Code</th><th>Name</th><th>Hrs/week</th></tr>
@@ -116,12 +68,12 @@
       </div>
         <h2>My Favourite Things</h2>
         <a href="https://tsm.gg/teams/lol" target="_blank">
-          <figure></figure>
-          <img src="Images/TSMIcon.jpg" alt="My favourite Esports Team" />
-          <figcaption>
-            <strong>My favourite NA Esports Team for League of Legends</strong>
-          </figcaption>
-        </figure>
+          <figure>
+            <img src="Images/TSMIcon.jpg" alt="My favourite Esports Team" />
+            <figcaption>
+              <strong>My favourite NA Esports Team for League of Legends</strong>
+            </figcaption>
+          </figure>
         </a>
         <h3>Games</h3>
         <ol>
@@ -159,8 +111,8 @@
         </p>
         <!--Mail function needs mail app, find later.-->
       <picture>
-        <source type="image/svg+xml" srcset="Images/sc-logo.svg" media="(max width:70px)">
-        <img src= "Images/sc-logo.png"
+        <source type="image/svg+xml" srcset="Images/sc-logo.svg">
+        <img src= "Images/sc-logo.png" width="70" alt="Sault College Logo"
         srcset="Images/sc-logo@1.5x.png 1.5x, Images/sc-logo@2x.png 2x">
       </picture>
       </footer>
