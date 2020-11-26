@@ -22,27 +22,17 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <style>
-        h1{ 
-          background: rgb(2,0,36);
-          background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,121,110,0.36458333333333337) 24%, rgba(23,111,163,1) 100%);
-        }
-        h1,h2,h3,h4,h5,h6 {
-          font-family: 'Space Mono', monospace;
-        }
-        p {
-          font-family: 'Asap', sans-serif;
-        }
-        a{
-          text-decoration: none;
-        }
-        a:hover{
-          text-decoration: underline;
-        }
-        ul{  
-            background-image: url(Images/link);
-            width: 10px;
-            height: 10px;
-            padding: 1em;
+        
+      main ul {
+        list-style-type: none;
+        padding: 0;
+      }
+        main ul li {  
+            background-image: url(Images/link.png);
+            background-size: 10px 10px;
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 1em;
         }
       </style>  
 </head>
@@ -58,9 +48,12 @@
         </ul>
     </nav>
 </header> 
-<h1>Links Page!</h1>
 <main>
-
+  <h1>Useful Links</h1>
+  <ul>
+      <li><a href="https://validator.w3.org/nu/" target="_blank">HTML Validator</a></li>
+      <li><a href="https://realfavicongenerator.net/" target="_blank">Favicon Generator</a></li>
+  </ul>
 </main>
 <footer>
  <hr> <blockquote>Man, I hate druids. Who designed this class? Literally burst healing over time and manditory raid and dungeon healer for 4 years.</blockquote>

@@ -19,35 +19,13 @@
     <link href="styles/Main.css" rel="stylesheet">
     <link rel="manifest" href="site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />\
+    <meta name="theme-color" content="#ffffff" />
     <style>
-      h1{ 
-        background: rgb(2,0,36);
-        background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,121,110,0.36458333333333337) 24%, rgba(23,111,163,1) 100%);
-      }
-      h1,h2,h3,h4,h5,h6 {
-        font-family: 'Space Mono', monospace;
-      }
-      p {
-        font-family: 'Asap', sans-serif;
-      }
-      body a{
-        text-decoration: none;
-      }
-      body a:hover{
-        text-decoration: underline;
-      }
       img{
         margin: 1em;
       }
       footer{
-        font-size: 75%;
-        text-align: center;
-        float: none;
-      }
-      .backtop{
-        text-shadow: 4px;
-        text-decoration: none !important
+        clear: both;
       }
 
     </style>
@@ -67,7 +45,7 @@
       <main>
         <h1>Lorem Ipsum</h1>
         <p>
-           <img src="https://loremflickr.com/320/240/Tyrande" style=float:left>
+           <img src="https://loremflickr.com/320/240/Tyrande" style="float:left" alt="Tyrande">
            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
            Etiam rhoncus ipsum nec lectus mollis, non sodales eros sodales.
            Maecenas faucibus sem sed tellus tempus mollis. Quisque rutrum laoreet metus, vel auctor sem faucibus a.
@@ -91,7 +69,7 @@
             proin gravida hendrerit. Et odio pellentesque diam volutpat commodo.
         </p>
         <p>
-            <img src="https://loremflickr.com/320/240/jojo" style=float:right; style="margin-right: 10px;"/>
+            <img src="https://loremflickr.com/320/240/jojo" style="float:right;" alt="Jojo" />
             Sed odio morbi quis commodo odio aenean sed. Amet nisl purus in mollis nunc sed. Eget egestas purus viverra
              accumsan in nisl. Ac auctor augue mauris augue neque gravida. Nec ullamcorper sit amet risus nullam eget felis.
               Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Consectetur adipiscing elit duis tristique 
@@ -127,8 +105,8 @@
         </p>
         <!--Mail function needs mail app, find later.-->
       <picture>
-        <source type="image/svg+xml" srcset="Images/sc-logo.svg" media="(max width:70px)">
-        <img src= "Images/sc-logo.png"
+        <source type="image/svg+xml" srcset="Images/sc-logo.svg" >
+        <img src= "Images/sc-logo.png" width="70" alt="Sault College Logo"
         srcset="Images/sc-logo@1.5x.png 1.5x, Images/sc-logo@2x.png 2x">
       </picture>
       </footer>
