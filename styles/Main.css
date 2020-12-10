@@ -198,7 +198,7 @@ footer hr {
 }
 
 .bio {
-  column-count: 3;
+  column-width: 13em;
   column-gap: 2em;
 }
 
