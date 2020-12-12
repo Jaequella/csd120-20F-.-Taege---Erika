@@ -173,7 +173,9 @@ footer {
   font-size: 75%;
   text-align: center;
 }
-
+.footer a{
+  transition: rotate 200ms ease;
+}
 a[href="#top"] {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0);
   margin-left: -25px;
@@ -234,6 +236,9 @@ div.favourites label {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
 }
+.gallery a{
+transition: transform 200ms ease;
+}
 .gallery img {
   display: block;
   width: 100%;
@@ -243,11 +248,51 @@ div.favourites label {
 .gallery img:hover {
   scale: 1.1;
 }
+@media screen and (max-width: 800px){
+ .favourites{
+    flex-direction: column;
+  
+  }
+  .favourites > *{
+    display: table-header-group;
+    display: initial;
+  }
+}
 .row-span-2 {
   grid-row: span 2;
 }
+
 .col-span-2 {
   grid-column: span 2;
+}
+@media screen and (max-width: 450px){
+  .col-span-2 {
+    grid-column: span 1;
+  }
+  tfoot, thead, th{
+    display: none;
+  }
+  td{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  tr td{
+    display: block;
+  }
+  .firstTD{
+    padding-top: 0.3em;
+    font: bold;
+  }
+  .lastTD{
+    padding-bottom: 0.3em;
+    font: italic;
+    font-size: 0.8em;
+  }
+  .lastTD::after{
+    content: ' hrs/week ';
+  }
 }
 img.paperclip {
   background: none;
@@ -257,7 +302,64 @@ img.paperclip {
   right: -20px;
   top: -14px;
 }
+
 .bio a {
-  display: block;
+  display: inline-block;
   position: relative;
+}
+.bio div{
+  min-width: 180px;
+}
+@media screen and (max-width: 550px){
+header nav ul{
+  flex-direction: column;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+}
+li a{
+  padding-top: 0.5em;
+  border-top: none;
+}
+header nav a:hover{
+  border-top: none;
+  text-decoration: underline !important;
+  text-underline-position: under;
+}
+}
+#menu-toggle , .sandwich-icon{
+display: none;
+}
+@media screen and (max-width: 550px){
+  .sandwich-icon{
+    display: block;
+    width: 40px;
+    height: 25px;
+    border-top: 5px solid rgb(91, 216, 158);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .sandwich-icon::before{
+    content: " ";
+    display: block;
+    width: 40px;
+    border-top:5px solid rgb(91, 216, 158);
+    position: absolute;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .sandwich-icon::after{
+    content: " ";
+    display: block;
+    width: 40px;
+    border-top:5px solid rgb(91, 216, 158);
+    position: absolute;
+    margin-top: 15px;
+  }
+  .sandwich-icon:hover{
+    cursor: pointer;
+
+  }
 }
