@@ -182,6 +182,7 @@ a[href="#top"] {
   position: sticky;
   bottom: 10px;
   display: inline-block;
+  transition: transform 200ms;
 }
 a[href="#top"]:hover {
   text-decoration: none !important;
@@ -233,7 +234,7 @@ div.favourites label {
 }
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 10px;
 }
 .gallery a{
@@ -249,6 +250,9 @@ transition: transform 200ms ease;
   scale: 1.1;
 }
 @media screen and (max-width: 800px){
+  div.favourites label {
+    order: 0;
+  }
  .favourites{
     flex-direction: column;
   
@@ -269,6 +273,9 @@ transition: transform 200ms ease;
   .col-span-2 {
     grid-column: span 1;
   }
+  table caption {
+    caption-side:top;
+  }
   tfoot, thead, th{
     display: none;
   }
@@ -281,16 +288,16 @@ transition: transform 200ms ease;
   tr td{
     display: block;
   }
-  .firstTD{
+  tr td:first-of-type {
     padding-top: 0.3em;
-    font: bold;
+    font-weight: bold;
   }
-  .lastTD{
+  tr td:last-of-type {
     padding-bottom: 0.3em;
-    font: italic;
+    font-style: italic;
     font-size: 0.8em;
   }
-  .lastTD::after{
+  tr td:last-of-type::after{
     content: ' hrs/week ';
   }
 }
@@ -314,10 +321,14 @@ img.paperclip {
 header nav ul{
   flex-direction: column;
   align-items: center;
+  transition: height 200ms;
   height: 0;
   overflow: hidden;
 }
-li a{
+#menu-toggle:checked + .sandwich-icon + ul {
+  height: 200px;
+}
+header nav li a{
   padding-top: 0.5em;
   border-top: none;
 }
@@ -340,6 +351,8 @@ display: none;
     margin-bottom: 1em;
     margin-right: auto;
     margin-left: auto;
+    transition: all 200ms;
+    position: relative;
   }
   .sandwich-icon::before{
     content: " ";
@@ -349,6 +362,7 @@ display: none;
     position: absolute;
     margin-top: 5px;
     margin-bottom: 15px;
+    transition: all 200ms;
   }
   .sandwich-icon::after{
     content: " ";
@@ -357,9 +371,19 @@ display: none;
     border-top:5px solid rgb(91, 216, 158);
     position: absolute;
     margin-top: 15px;
+    transition: all 200ms;
   }
   .sandwich-icon:hover{
     cursor: pointer;
 
+  }
+
+  
+  #menu-toggle:checked + .sandwich-icon {
+    transform: rotate(45deg);
+    border-top-color: transparent;
+  }
+  #menu-toggle:checked + .sandwich-icon::after {
+      transform: rotate(-90deg) translateX(10px);
   }
 }
